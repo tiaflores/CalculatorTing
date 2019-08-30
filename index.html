@@ -4,6 +4,7 @@
 
     <title>Bruzer Treat Inc</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="Images/bruzer.jpg" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -24,7 +25,7 @@
       $("button").click(function(){
         input = $(this).attr("value");
 
-        if(input === "CA"){
+        if(input === "CE"){
           currentNum = 0;
           eq = 0;
           op = 0;
@@ -32,8 +33,6 @@
           input = 0;
           result = 0;
           $(".result p").html("0");
-        } else if(input == "CE"){
-            $(".result p").html("0");
         }
         // if(input === "="){
            currentNum += input;
@@ -82,7 +81,7 @@
             <button type="button" class="btn btn-primary"value="0"> 0 </button>
             <button type="button" class="btn btn-success"value="="> = </button>
             <button type="button" class="btn btn-danger"value="CE"> CE </button>
-            <button type="button" class="btn btn-danger" value="CA"> CA </button>
+            <button type="button" class="btn btn-warning" value="/"> / </button>
         </div>
       </div>
     </div>

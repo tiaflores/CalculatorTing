@@ -1,11 +1,12 @@
 .buttons{
   background-color: #ffff8a;
   width:20%;
-  height:auto;
+  height:250vh;
   display:inline-block;
   text-align:center;
-  float:center;
   font-size:20px;
+  background: url(Images/bruzer.jpg) no-repeat fixed;
+  background-size: 50% 50%;
 }
 .result{
 background-color: #ffade5;
