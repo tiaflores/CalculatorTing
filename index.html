@@ -15,33 +15,35 @@
     <script>
     $(document).ready(function(){
 
-
       var input = "";
       var currentNum = "";
       var op = "";
       var eq = "";
-      var result = "";
+      var result = 0;
 
       $("button").click(function(){
         input = $(this).attr("value");
 
-        if(input === "CE"){
-          currentNum = 0;
-          eq = 0;
-          op = 0;
-          currentNum = 0;
-          input = 0;
-          result = 0;
-          $(".result p").html("0");
-        }
-        // if(input === "="){
-           currentNum += input;
-           eq = currentNum;
-           $(".result p").html(eval(eq));
-        //}
 
+  if(input === "CE"){
+    currentNum = 0;
+    eq = 0;
+    op = 0;
+    input = 0;
+    result = 0;
+    $(".result p").html("0");
+  }
+  else if(input === "="){
+    currentNum = 0;
+    input = 0;
+     $(".result p").html(eval(eq));
+     input = eq;
 
-
+  }
+        else{
+          eq += input;
+        $(".result p").html(eq);
+}
       });
 
 
@@ -60,7 +62,7 @@
             <button type="button" class="btn btn-primary" value="7">7</button>
             <button type="button" class="btn btn-primary"value="8">8</button>
             <button type="button" class="btn btn-primary"value="9">9</button>
-            <button type="button" class="btn btn-warning"value="X">X</button>
+            <button type="button" class="btn btn-warning"value="*">X</button>
           </div>
 
           <div class="row">
