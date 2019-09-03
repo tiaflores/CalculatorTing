@@ -35,9 +35,10 @@
   }
   else if(input === "="){
     currentNum = 0;
-    input = 0;
+    input = eval(eq);
      $(".result p").html(eval(eq));
-     input = eq;
+     input = eval(eq);
+     console.log(input);
 
   }
         else{
