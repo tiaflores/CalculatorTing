@@ -29,8 +29,14 @@
           $(".result p").html(0);
         }
         else if(input === "="){
+          if(eval(eq) != Infinity){
             $(".result p").html(eval(eq));
             eq = eval(eq);
+          }else{
+            eq = 0;
+            $(".result p").html(0);
+          }
+
         }else{
           eq += input;
           $(".result p").html(eq);
