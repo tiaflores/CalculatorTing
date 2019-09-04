@@ -2,7 +2,7 @@
 <html>
   <head>
 
-    <title>Bruzer Treat Inc</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="Images/bruzer.jpg" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -16,54 +16,42 @@
     $(document).ready(function(){
 
       var input = "";
-      var currentNum = "";
-      var op = "";
       var eq = "";
-      var result = 0;
+      var result = "";
 
       $("button").click(function(){
         input = $(this).attr("value");
 
-
-  if(input === "CE"){
-    currentNum = 0;
-    eq = 0;
-    op = 0;
-    input = 0;
-    result = 0;
-    $(".result p").html("0");
-  }
-  else if(input === "="){
-    currentNum = 0;
-    input = eval(eq);
-     $(".result p").html(eval(eq));
-     input = eval(eq);
-     console.log(input);
-
-  }
-        else{
+        if(input === "CE"){
+          eq = "";
+          input = "";
+          result = "";
+          $(".result p").html(0);
+        }
+        else if(input === "="){
+            $(".result p").html(eval(eq));
+            eq = eval(eq);
+        }else{
           eq += input;
-        $(".result p").html(eq);
-}
+          $(".result p").html(eq);
+        }
+
       });
-
-
     });
 
     </script>
   </head>
   <body>
     <div class="container">
-      <h3>Bruzer Inc</h3>
-      <div class="result">
-        <p>0</p>
-      </div>
         <div class="buttons">
+          <div class="result">
+            <p> 0 </p>
+          </div>
           <div class="row">
             <button type="button" class="btn btn-primary" value="7">7</button>
             <button type="button" class="btn btn-primary"value="8">8</button>
             <button type="button" class="btn btn-primary"value="9">9</button>
-            <button type="button" class="btn btn-warning"value="*">X</button>
+            <button type="button" class="btn btn-warning"value="*">x</button>
           </div>
 
           <div class="row">

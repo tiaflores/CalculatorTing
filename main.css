@@ -1,5 +1,4 @@
 .buttons{
-  background-color: #ffff8a;
   width:20%;
   height:auto;
   display:inline-block;
@@ -9,11 +8,12 @@
   padding: 10px 0 10px 0;
 }
 .result{
-  background-color: #ffade5;
-  width:20%;
+  background-color: #ffe229;
+padding-right:10px;
+text-align:right;
   height:auto;
-  text-align:right;
   font-size: 20px;
+  float:center;
 }
 .row{
   margin-top:4px;
@@ -21,4 +21,7 @@
 button{
   margin:2px;
   width:50px;
+}
+.container{
+
 }
