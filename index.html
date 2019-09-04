@@ -36,7 +36,6 @@
             eq = 0;
             $(".result p").html(0);
           }
-
         }else{
           eq += input;
           $(".result p").html(eq);
@@ -54,10 +53,18 @@
             <p> 0 </p>
           </div>
           <div class="row">
-            <button type="button" class="btn btn-primary" value="7">7</button>
+            <div class="col-xs-3">
+                <button type="button" class="btn btn-primary" value="7">7</button>
+            </div>
+          <div class="col-xs-3">
             <button type="button" class="btn btn-primary"value="8">8</button>
+          </div>
+          <div class="col-xs-3">
             <button type="button" class="btn btn-primary"value="9">9</button>
+          </div>
+          <div class="col-xs-3">
             <button type="button" class="btn btn-warning"value="*">x</button>
+          </div>
           </div>
 
           <div class="row">
